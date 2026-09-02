@@ -121,4 +121,5 @@ When `KITTEN_LOG_TIME` is defined, exactly one of `KITTEN_LOG_TIME_MS` or `KITTE
 
 ## Contributor
 kitten-yyds
+
 ![kitten-yyds logo](./img/kitten-yyds.png)
