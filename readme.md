@@ -1,6 +1,8 @@
 # Kitten Log
-
 ![img](./img/img.png)
+
+## Language
+[中文](./readme_cn.md)
 
 ## Overview
 A small and portable logging library for embedded systems.
@@ -65,15 +67,16 @@ Example output:
 [I][main]: this is an information msg
 [D][main]: this is a debug msg
 ```
+
 > **Tips:** The `tag` argument can be any string. It is recommended to use the source file or module name.
 
 > **Notes:** `__func__` can be used to automatically get the name of the current function.
 
 ### 4. Enable timestamps optionally
-Timestamps are disabled by default.
-If you want to enable timestamps, you need to define `KITTEN_LOG_TIME`.
+Timestamps are disabled by default. If you want to enable timestamps, you need to define `KITTEN_LOG_TIME`.
 
 Then you can choose to use millisecond or second timestamps by defining `KITTEN_LOG_TIME_MS` or `KITTEN_LOG_TIME_S`.
+
 > **Warning:** When `KITTEN_LOG_TIME` is defined, exactly one of `KITTEN_LOG_TIME_MS` and `KITTEN_LOG_TIME_S` must be defined. Defining both or neither will cause a compilation error.
 
 > **Notes:** If you use GNU make, you can define the macros in the Makefile.
@@ -87,10 +90,10 @@ Then you can choose to use millisecond or second timestamps by defining `KITTEN_
 
 ### Types
 - `enum kitten_log_level`
-- `KITTEN_LOG_LEVEL_DEBUG`
-- `KITTEN_LOG_LEVEL_INFO`
-- `KITTEN_LOG_LEVEL_WARN`
-- `KITTEN_LOG_LEVEL_ERROR`
+  - `KITTEN_LOG_LEVEL_DEBUG`
+  - `KITTEN_LOG_LEVEL_INFO`
+  - `KITTEN_LOG_LEVEL_WARN`
+  - `KITTEN_LOG_LEVEL_ERROR`
 
 ### Functions
 #### `void kitten_log(enum kitten_log_level level, const char *tag, const char *format, ...);`
