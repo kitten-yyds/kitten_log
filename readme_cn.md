@@ -90,10 +90,10 @@ KITTEN_LOGD("main", "this is a debug msg");
 
 ### 类型
 - `enum kitten_log_level`
-- `KITTEN_LOG_LEVEL_DEBUG`
-- `KITTEN_LOG_LEVEL_INFO`
-- `KITTEN_LOG_LEVEL_WARN`
-- `KITTEN_LOG_LEVEL_ERROR`
+    - `KITTEN_LOG_LEVEL_DEBUG`
+    - `KITTEN_LOG_LEVEL_INFO`
+    - `KITTEN_LOG_LEVEL_WARN`
+    - `KITTEN_LOG_LEVEL_ERROR`
 
 ### 函数
 #### `void kitten_log(enum kitten_log_level level, const char *tag, const char *format, ...);`
