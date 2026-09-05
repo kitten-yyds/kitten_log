@@ -125,4 +125,4 @@ KITTEN_LOGD("main", "this is a debug msg");
 ## 贡献者
 kitten-yyds
 
-![kitten-yyds logo](./img/kitten-yyds.png)
+![kitten-yyds logo](./img/kitten-yyds-background-path.svg)
